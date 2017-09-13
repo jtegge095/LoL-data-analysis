@@ -1,6 +1,6 @@
 # LoL analysis code
 # import libraries
-import pandas as pandas
+import pandas as pd
 import numpy as np 
 import matplotlib.pyplot as plt 
 import seaborn as sns
@@ -48,6 +48,5 @@ banCols = ['t1_ban1','t1_ban2','t1_ban3','t1_ban4','t1_ban5',
 for c in champCols:
     data[c] = data[c].apply(lambda x: idToName(x, champData))
 
-#**Not working yet**
-#for c in banCols:
-    #data[c] = data[c].apply(lambda x: idToName(x, champData))       
+for c in banCols:
+    data[c] = data[c].apply(lambda x: idToName(x, champData))       
