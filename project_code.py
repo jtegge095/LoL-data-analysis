@@ -85,4 +85,3 @@ tagsList = data['t1_champ1id_tags']
 
 # Add winner color column to see which side the team was on
 data['winner(color)'] = data['winner'].apply(lambda x: numToColor(x))
-data.head()
