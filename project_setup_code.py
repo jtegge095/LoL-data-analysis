@@ -6,7 +6,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import json
 sns.set_style('darkgrid')
-%matplotlib inline
+
+# Use this in notebook to show plots
+# %matplotlib inline
 
 def idToName(ID, dic):
     '''
@@ -33,12 +35,11 @@ def numToColor(data):
     data: main dataframe
 
     used to get color of team from 0 or 1
-    assuming that team 0 is red and 1 is blue
     '''
     if data == 0:
-        color = 'red'
-    else:
         color = 'blue'
+    else:
+        color = 'red'
     return color
 
 # import original data
